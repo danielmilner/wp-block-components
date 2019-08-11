@@ -1,0 +1,27 @@
+{
+  "name": "wp-block-components",
+  "version": "0.0.1",
+  "description": "Gutenberg block components for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gutenberg",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmilner/wp-block-components.git"
+  },
+  "author": "Daniel Milner <daniel@firetreedesign.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/danielmilner/wp-block-components/issues"
+  },
+  "homepage": "https://github.com/danielmilner/wp-block-components#readme",
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
