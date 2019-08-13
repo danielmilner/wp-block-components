@@ -1,27 +1,35 @@
 {
   "name": "wp-block-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gutenberg block components for React",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib"
   },
   "keywords": [
     "gutenberg",
-    "react"
+    "react",
+    "wpgraphql"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielmilner/wp-block-components.git"
   },
-  "author": "Daniel Milner <daniel@firetreedesign.com>",
+  "author": "Daniel Milner <dmilner@gmail.com>",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/danielmilner/wp-block-components/issues"
   },
   "homepage": "https://github.com/danielmilner/wp-block-components#readme",
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@babel/preset-react": "^7.0.0"
   }
 }
