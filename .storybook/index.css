@@ -1,0 +1,53 @@
+p {
+    padding: 10px;
+}
+
+.has-small-font-size {
+    font-size: 12px;
+}
+
+.has-normal-font-size {
+    font-size: 16px;
+}
+
+.has-medium-font-size {
+    font-size: 20px;
+}
+
+.has-large-font-size {
+    font-size: 24px;
+}
+
+.has-huge-font-size {
+    font-size: 28px;
+}
+
+.has-drop-cap:first-child:first-letter {
+    float: left;
+    padding-right: 8px;
+}
+
+.has-drop-cap.has-small-font-size:first-child:first-letter {
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.has-drop-cap.has-normal-font-size:first-child:first-letter {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.has-drop-cap.has-medium-font-size:first-child:first-letter {
+    font-size: 44px;
+    line-height: 44px;
+}
+
+.has-drop-cap.has-large-font-size:first-child:first-letter {
+    font-size: 52px;
+    line-height: 52px;
+}
+
+.has-drop-cap.has-huge-font-size:first-child:first-letter {
+    font-size: 60px;
+    line-height: 60px;
+}

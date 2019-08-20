@@ -1,11 +1,13 @@
 {
   "name": "wp-block-components",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Gutenberg block components for React",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [
     "gutenberg",
@@ -23,13 +25,22 @@
   },
   "homepage": "https://github.com/danielmilner/wp-block-components#readme",
   "peerDependencies": {
-    "react": "*",
-    "react-dom": "*"
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/plugin-syntax-jsx": "^7.2.0",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "babel-loader": "^8.0.6"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-syntax-highlighter": "^11.0.2"
   }
 }
