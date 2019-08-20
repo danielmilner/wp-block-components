@@ -1,5 +1,6 @@
 # Build
 lib
+storybook-static
 
 # Dependency directory
 node_modules
@@ -8,3 +9,5 @@ node_modules
 .DS_Store
 .env
 package-lock.json
+yarn.lock
+yarn-error.log
