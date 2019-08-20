@@ -4,6 +4,7 @@ React components for displaying Gutenberg blocks from WordPress.
 
 Currently available components:
 
+* CoreCodeBlock
 * CoreHeadingBlock
 * CoreParagraphBlock
 
