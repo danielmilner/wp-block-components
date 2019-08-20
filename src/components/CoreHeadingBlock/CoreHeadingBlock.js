@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const CoreHeadingBlock = props => {
 	const { align, anchor, className, content, level } = props.attributes;
@@ -12,12 +13,22 @@ const CoreHeadingBlock = props => {
 	return (
 		<Heading
 			{...anchor && { id: anchor }}
-			{...className && { className: ClassName }}
+			{...className && { className: className }}
 			style={styles}
 		>
 			{content}
 		</Heading>
 	);
+};
+
+CoreHeadingBlock.propTypes = {
+	attributes: PropTypes.shape({
+		align: PropTypes.string,
+		anchor: PropTypes.string,
+		className: PropTypes.string,
+		content: PropTypes.string,
+		level: PropTypes.string,
+	}),
 };
 
 CoreHeadingBlock.defaultProps = {

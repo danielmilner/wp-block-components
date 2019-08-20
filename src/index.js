@@ -1,4 +1,5 @@
-import CoreHeadingBlock from './components/CoreHeadingBlock';
-import CoreParagraphBlock from './components/CoreParagraphBlock';
+import CoreCodeBlock from './components/CoreCodeBlock/CoreCodeBlock';
+import CoreHeadingBlock from './components/CoreHeadingBlock/CoreHeadingBlock';
+import CoreParagraphBlock from './components/CoreParagraphBlock/CoreParagraphBlock';
 
-export { CoreHeadingBlock, CoreParagraphBlock };
+export { CoreCodeBlock, CoreHeadingBlock, CoreParagraphBlock };
