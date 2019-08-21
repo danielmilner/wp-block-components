@@ -1,6 +1,10 @@
 # WordPress Block Components for React
 
+[![NPM](https://img.shields.io/npm/v/wp-block-components)](https://npmjs.com/package/wp-block-components) ![npm](https://img.shields.io/npm/dt/wp-block-components) ![NPM](https://img.shields.io/npm/l/wp-block-components) [![GitHub issues](https://img.shields.io/github/issues-raw/danielmilner/wp-block-components)](https://github.com/danielmilner/wp-block-components/issues)
+
 React components for displaying Gutenberg blocks from WordPress.
+
+These components were built to be used in combination with [WPGraphQL](https://wpgraphql.com/) and [wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg), but can be used in any React project.
 
 Currently available components:
 

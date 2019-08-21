@@ -27,7 +27,7 @@ CoreHeadingBlock.propTypes = {
 		anchor: PropTypes.string,
 		className: PropTypes.string,
 		content: PropTypes.string,
-		level: PropTypes.string,
+		level: PropTypes.number,
 	}),
 };
 
@@ -37,7 +37,7 @@ CoreHeadingBlock.defaultProps = {
 		anchor: null,
 		className: null,
 		content: null,
-		level: '2',
+		level: 2,
 	},
 };
 

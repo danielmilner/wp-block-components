@@ -16,7 +16,7 @@ storiesOf('CoreHeadingBlock', module)
 				align: select('align', ['left', 'center', 'right', null], null, group),
 				anchor: text('anchor', null, group),
 				className: text('className', null, group),
-				level: select('level', ['1', '2', '3', '4', '5', '6'], '2', group),
+				level: select('level', [1, 2, 3, 4, 5, 6], 2, group),
 			}}
 		/>
 	));
