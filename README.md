@@ -6,48 +6,43 @@ React components for displaying Gutenberg blocks from WordPress.
 
 These components were built to be used in combination with [WPGraphQL](https://wpgraphql.com/) and [wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg), but can be used in any React project.
 
-Currently available components:
+Currently supported blocks:
 
-* CoreCodeBlock
-* CoreHeadingBlock
-* CoreParagraphBlock
+* Code
+* Heading
+* Image
+* List
+* Paragraph
 
 ## Installation and usage
 First, install __wp-block-components__ from npm.
 ```
 yarn add wp-block-components
 ```
-Next, import the components into your app.
+Next, import the component into your app.
 ```js
-import {
-	CoreCodeBlock,
-	CoreHeadingBlock,
-	CoreParagraphBlock
-} from 'wp-block-components';
+import { CoreBlock } from 'wp-block-components';
 ```
 
 ## Props
-Each components has only one prop.
+The component has only one prop.
 
-* `attributes` - An object of block attributes returned from WordPress.
+* `block` - A block object returned from WPGraphQL.
 
-### Attribute prop example
+### Block prop example
 ```js
 {
-	align: null,
-	backgroundColor: null,
-	className: null,
-	content: '',
-	customBackgroundColor: null,
-	customFontSize: null,
-	customTextColor: null,
-	direction: null,
-	dropCap: null,
-	fontSize: null,
-	textColor: null,
+	__typename: 'WordPress_CoreHeadingBlock',
+	attributes: {
+		align: null,
+		anchor: null,
+		className: null,
+		content: 'This is a heading',
+		level: 2,
+	}
 }
 ```
 
 ## Styles
 
-These components uses [Gutenberg Theme Support](https://developer.wordpress.org/block-editor/developers/themes/theme-support/) classes so that you can style everything exactly how you want.
+These components use the [Gutenberg Theme Support](https://developer.wordpress.org/block-editor/developers/themes/theme-support/) classes, just like WordPress. Each block also has its own class in order to easily target your styles. For example, the `CoreHeadingBlock` component has a class of `core-block-heading`.

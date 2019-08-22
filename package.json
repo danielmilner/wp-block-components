@@ -1,6 +1,6 @@
 {
   "name": "wp-block-components",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Gutenberg block components for React",
   "main": "lib/index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/danielmilner/wp-block-components.git"
   },
-  "author": "Daniel Milner <dmilner@gmail.com>",
+  "author": "Daniel Milner <daniel@theokay.dev>",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/danielmilner/wp-block-components/issues"

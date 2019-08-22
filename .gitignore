@@ -8,6 +8,4 @@ node_modules
 # Other
 .DS_Store
 .env
-package-lock.json
-yarn.lock
 yarn-error.log
