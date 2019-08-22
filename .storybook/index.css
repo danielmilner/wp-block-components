@@ -51,3 +51,65 @@ p {
     font-size: 60px;
     line-height: 60px;
 }
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.alignwide:not(.alignfull) {
+    max-width: 50%;
+    /* Could be a pixel value too: this is the one that decides the width of the text */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.core-block-image.alignfull {
+    display: block;
+    text-align: center;
+}
+
+.core-block-image.alignwide {
+    max-width: 75%;
+    /* Could be a pixel value too */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.core-block-image.alignfull img,
+.core-block-image.alignwide img {
+    width: 100%;
+}
+
+.core-block-image figure.alignleft {
+    display: block;
+    float: left;
+    margin-right: 2em;
+}
+
+.core-block-image figure.alignright {
+    display: block;
+    float: right;
+    margin-left: 2em;
+}
+
+.core-block-image figure.alignleft,
+.core-block-image figure.alignright {
+    display: table;
+}
+
+.core-block-image figure.alignleft figcaption,
+.core-block-image figure.alignright figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}
+
+.core-block-image figure.alignright figcaption,
+.core-block-image figure.alignleft figcaption {
+    margin-bottom: 1em;
+}
