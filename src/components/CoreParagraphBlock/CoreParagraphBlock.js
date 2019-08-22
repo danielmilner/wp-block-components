@@ -17,7 +17,7 @@ const CoreParagraphBlock = props => {
 	} = props.attributes;
 
 	const styles = {};
-	const classes = [];
+	const classes = ['core-block-paragraph'];
 
 	if (className) {
 		classes.push(className);

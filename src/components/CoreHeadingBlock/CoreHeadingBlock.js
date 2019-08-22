@@ -5,6 +5,11 @@ const CoreHeadingBlock = props => {
 	const { align, anchor, className, content, level } = props.attributes;
 	const Heading = 'h' + level;
 	const styles = {};
+	const classes = ['core-block-heading'];
+
+	if (className) {
+		classes.push(className);
+	}
 
 	if (align) {
 		styles.textAlign = align;
@@ -13,7 +18,7 @@ const CoreHeadingBlock = props => {
 	return (
 		<Heading
 			{...anchor && { id: anchor }}
-			{...className && { className: className }}
+			{...classes.length > 0 && { className: classes.join(' ') }}
 			style={styles}
 		>
 			{content}
