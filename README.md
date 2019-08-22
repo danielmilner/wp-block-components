@@ -6,6 +6,8 @@ React components for displaying Gutenberg blocks from WordPress.
 
 These components were built to be used in combination with [WPGraphQL](https://wpgraphql.com/) and [wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg), but can be used in any React project.
 
+View Storybook examples here: [https://wp-block-components.netlify.com](https://wp-block-components.netlify.com)
+
 Currently supported blocks:
 
 * Code
